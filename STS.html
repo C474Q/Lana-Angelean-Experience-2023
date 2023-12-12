@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sciebce Technology & Society | Lana's Angelenean Experience 2023</title>
+    <link rel="icon" href="content/logo.ico" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Nerko+One&family=Pangolin&family=Permanent+Marker&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden flex flex-col items-center bg-[#b8d6ea]">
+    <a title="Go Back" href="index.html" class="absolute aspect-square w-[5vw] z-10 bg-[#5d5aa1] bg-opacity-70 top-0 right-0 mt-4 mr-4 rounded-2xl flex flex-col items-center justify-center transform ease-in-out duration-300 hover:scale-110"><i class="fas fa-reply text-2xl sm:text-4xl flex flex-col items-center justify-center text-white"></i></a>
+
+    <div class="w-screen sm:h-[60vh] h-screen p-2 bg-[#c625d4] bg-opacity-50 mb-4 sm:space-x-2 space-y-2 sm:space-y-0 flex flex-col sm:flex-row bg-prp" style="background-image: url(content/bg-hdr.png);">
+        <div class="aspect-square border-2 border-black h-full bg-white rounded-full bg-prp" style="background-image: url(content/logo.png);"></div>
+        <div class="w-full h-full bg-[#c50d0d] bg-opacity-30 rounded-xl p-4 flex flex-col items-start justify-center">
+            <h1 class="text-8xl font-bold text-white drop-shadow-2xl mb-4" style="font-family: 'Nerko One', cursive;">S.T.S</h1>
+            <p class="text-white text-2xl" style="font-family: 'Architects Daughter', cursive;">Science Technology & Society</p>
+        </div>
+    </div>
+
+    <div class="w-screen sm:h-[60vh] h-screen p-2 bg-[#c625d4] bg-opacity-50 mb-4 sm:space-x-2 space-y-2 sm:space-y-0 flex flex-col sm:flex-row bg-prp jus">
+        <div class="aspect-square border-2 border-black h-full bg-white bg-prp" style="background-image: url(content/sts/STS\ MODULE\ B.png);"></div>
+        <div class="w-full h-full bg-[#c50d0d] bg-opacity-30 rounded-xl p-4 flex flex-col items-start justify-start">
+            <h1 class="text-5xl font-bold text-white drop-shadow-2xl mb-4" style="font-family: 'Permanent Marker', cursive;">Module B:</h1>
+            <p class="text-white text-4xl overflow-y-auto w-full" style="font-family: 'Architects Daughter', cursive;">Scientific Inquiry Technology and Society</p>
+        </div>
+    </div>
+
+    <div class="w-screen sm:h-[60vh] h-screen p-2 bg-[#c625d4] bg-opacity-50 order mb-4 sm:space-x-2 space-y-2 sm:space-y-0 flex flex-col sm:flex-row">
+        <!-- Yellow container (default order is 0) -->
+        <div class="w-full sm:h-full h-1/2 bg-[#c50d0d] bg-opacity-30 rounded-xl p-4 flex flex-col items-start justify-start">
+            <h1 class="text-5xl font-bold text-white drop-shadow-2xl mb-4" style="font-family: 'Permanent Marker', cursive;">Module C: Prosthetics</h1>
+            <p class="text-white sm:text-2xl text-md overflow-y-auto w-full h-full" style="font-family: 'Architects Daughter', cursive;">
+                The first records of a prosthetic device date back to the ancient Egypt. One prosthetic toe is known as the “Greville Chester Toe”, made of linen, paper mache, and glue. Historians believed that this prosthetic was mainly used as a cosmetic rather than a functional prosthetic. There is another toe prosthetic, also believed to have existed in ancient Egypt. Compared to the Greville Chester Toe, this device was made of leather and wood and is believed to be functional.<br><br>
+                The world wars have inspired prosthetic advances. The rate of amputees from the war has risen and thus the demand for rehabilitation and later on, prosthetic devices. These devices were made from leather, wood, metal, and glue. Upon the continuous advancement of technology, the prosthetic limb devices we see today are made of more durable and lightweight materials such as titanium, plastic, and aluminum.<br><br>
+                Prosthetic devices have been one of the most revolutionary inventions in the field of physical therapy. Upon the advancements, these devices have helped restore the function of the loss of limbs of amputees, bringing back the lives they once had. In the future, I hope physical therapy and these prosthetic devices will be much more accessible to the masses, and hopefully will be able to mimic the function of human limbs better. <br><br>
+            </p>
+        </div>
+    
+        <!-- Red container (order is set to 1 for mobile screens) -->
+        <div class="aspect-square h-full bg-red-200 order-first sm:order-last bg-prp" style="background-image: url(content/sts/MODULE\ C.jpg);">
+        </div>
+    </div>
+
+    <div class="w-screen sm:h-[60vh] h-screen p-2 bg-[#c625d4] bg-opacity-50 mb-4 sm:space-x-2 space-y-2 sm:space-y-0 flex flex-col sm:flex-row bg-prp">
+        <div class="aspect-square h-full border-2 border-black bg-white bg-prp relative">
+            <div x-data="{ currentSlide: 0 }">
+                <div class="relative overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" x-bind:style="'transform: translateX(-' + currentSlide * 100 + '%)'">
+                        <div class="w-full flex-shrink-0">
+                            <img src="content/sts/module f 1.webp" alt="Image 1" class="w-full aspect-square">
+                        </div>
+                        <div class="w-full flex-shrink-0">
+                            <img src="content/sts/module f 2.jpg" alt="Image 2" class="w-full aspect-square">
+                        </div>
+                        <div class="w-full flex-shrink-0">
+                            <img src="content/sts/module f 3.jpg" alt="Image 3" class="w-full aspect-square">
+                        </div>
+                        <!-- Add more images as needed -->
+                    </div>
+                </div>
+                
+                <div class="absolute top-1/2 transform -translate-y-1/2 flex items-center left-4">
+                    <button @click="currentSlide = Math.max(currentSlide - 1, 0)" class="px-4 py-2 bg-blue-500 text-white bg-opacity-50 rounded-xl"><i class="fas fa-angle-left text-2xl"></i></button>
+                </div>
+        
+                <div class="absolute top-1/2 transform -translate-y-1/2 flex items-center right-4">
+                    <button @click="currentSlide = Math.min(currentSlide + 1, 2)" class="px-4 py-2 bg-blue-500 text-white bg-opacity-50 rounded-xl"><i class="fas fa-angle-right text-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="w-full sm:h-full h-1/2 bg-[#c50d0d] bg-opacity-30 rounded-xl p-4 flex flex-col items-start justify-start">
+            <h1 class="text-5xl font-bold text-white drop-shadow-2xl mb-4" style="font-family: 'Permanent Marker', cursive;">Module F: Ecosystems, Global Environmentalism Biodiversity and Climate Crisis</h1>
+            <p class="text-white text-2xl overflow-y-auto w-full" style="font-family: 'Architects Daughter', cursive;">
+                We can see the evidence of the change of climate and the crisis it brings along in the global temperature rise. Ice glaciers are melting, leaving no habitat for the wildlife in those areas. The melting results in the rise of sea levels. Higher sea surface temperature from global warming produces much stronger typhoons, which is why typhoons in the Philippines are getting much stronger and more frequent. 
+            </p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+    <div class="w-screen sm:h-[60vh] h-screen p-2 bg-[#c625d4] bg-opacity-50 order mb-4 sm:space-x-2 space-y-2 sm:space-y-0 flex flex-col sm:flex-row">
+        <iframe style="width: 100%; height: 100%;"
+        src="https://www.youtube.com/embed/4uwUrMU-8Hs">
+    </iframe>
+    </div>
+
+</body>
+</html>
